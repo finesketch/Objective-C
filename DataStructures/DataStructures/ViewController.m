@@ -44,6 +44,9 @@
     // output the value of secondArray
     NSLog(@"Second array has the following U.K. make: %@", secondArray);
     
+    // output the value of thirdArray
+    NSLog(@"Second array has the following Japanese make: %@", thirdArray);
+    
     NSMutableArray *check1Array = [NSMutableArray arrayWithArray:firstArray];
     [check1Array removeObjectsInArray:secondArray];
     
