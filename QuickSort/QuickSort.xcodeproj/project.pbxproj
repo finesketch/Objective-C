@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCB778E01C0A7002009BE3A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB778DF1C0A7002009BE3A4 /* AppDelegate.m */; };
+		DCB778E31C0A7002009BE3A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB778E21C0A7002009BE3A4 /* main.m */; };
+		DCB778E61C0A7002009BE3A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB778E51C0A7002009BE3A4 /* ViewController.m */; };
+		DCB778E81C0A7002009BE3A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB778E71C0A7002009BE3A4 /* Assets.xcassets */; };
+		DCB778EB1C0A7002009BE3A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB778E91C0A7002009BE3A4 /* Main.storyboard */; };
+		DCB778F61C0A7002009BE3A4 /* QuickSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB778F51C0A7002009BE3A4 /* QuickSortTests.m */; };
+		DCB779011C0A7002009BE3A4 /* QuickSortUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB779001C0A7002009BE3A4 /* QuickSortUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCB778F21C0A7002009BE3A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB778D31C0A7002009BE3A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB778DA1C0A7002009BE3A4;
+			remoteInfo = QuickSort;
+		};
+		DCB778FD1C0A7002009BE3A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB778D31C0A7002009BE3A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB778DA1C0A7002009BE3A4;
+			remoteInfo = QuickSort;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCB778DB1C0A7002009BE3A4 /* QuickSort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSort.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB778DE1C0A7002009BE3A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCB778DF1C0A7002009BE3A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCB778E21C0A7002009BE3A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCB778E41C0A7002009BE3A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DCB778E51C0A7002009BE3A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCB778E71C0A7002009BE3A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCB778EA1C0A7002009BE3A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCB778EC1C0A7002009BE3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB778F11C0A7002009BE3A4 /* QuickSortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSortTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB778F51C0A7002009BE3A4 /* QuickSortTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSortTests.m; sourceTree = "<group>"; };
+		DCB778F71C0A7002009BE3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB778FC1C0A7002009BE3A4 /* QuickSortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB779001C0A7002009BE3A4 /* QuickSortUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSortUITests.m; sourceTree = "<group>"; };
+		DCB779021C0A7002009BE3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCB778D81C0A7002009BE3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB778EE1C0A7002009BE3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB778F91C0A7002009BE3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCB778D21C0A7002009BE3A4 = {
+			isa = PBXGroup;
+			children = (
+				DCB778DD1C0A7002009BE3A4 /* QuickSort */,
+				DCB778F41C0A7002009BE3A4 /* QuickSortTests */,
+				DCB778FF1C0A7002009BE3A4 /* QuickSortUITests */,
+				DCB778DC1C0A7002009BE3A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCB778DC1C0A7002009BE3A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCB778DB1C0A7002009BE3A4 /* QuickSort.app */,
+				DCB778F11C0A7002009BE3A4 /* QuickSortTests.xctest */,
+				DCB778FC1C0A7002009BE3A4 /* QuickSortUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCB778DD1C0A7002009BE3A4 /* QuickSort */ = {
+			isa = PBXGroup;
+			children = (
+				DCB778DE1C0A7002009BE3A4 /* AppDelegate.h */,
+				DCB778DF1C0A7002009BE3A4 /* AppDelegate.m */,
+				DCB778E41C0A7002009BE3A4 /* ViewController.h */,
+				DCB778E51C0A7002009BE3A4 /* ViewController.m */,
+				DCB778E71C0A7002009BE3A4 /* Assets.xcassets */,
+				DCB778E91C0A7002009BE3A4 /* Main.storyboard */,
+				DCB778EC1C0A7002009BE3A4 /* Info.plist */,
+				DCB778E11C0A7002009BE3A4 /* Supporting Files */,
+			);
+			path = QuickSort;
+			sourceTree = "<group>";
+		};
+		DCB778E11C0A7002009BE3A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCB778E21C0A7002009BE3A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCB778F41C0A7002009BE3A4 /* QuickSortTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB778F51C0A7002009BE3A4 /* QuickSortTests.m */,
+				DCB778F71C0A7002009BE3A4 /* Info.plist */,
+			);
+			path = QuickSortTests;
+			sourceTree = "<group>";
+		};
+		DCB778FF1C0A7002009BE3A4 /* QuickSortUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB779001C0A7002009BE3A4 /* QuickSortUITests.m */,
+				DCB779021C0A7002009BE3A4 /* Info.plist */,
+			);
+			path = QuickSortUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCB778DA1C0A7002009BE3A4 /* QuickSort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB779051C0A7002009BE3A4 /* Build configuration list for PBXNativeTarget "QuickSort" */;
+			buildPhases = (
+				DCB778D71C0A7002009BE3A4 /* Sources */,
+				DCB778D81C0A7002009BE3A4 /* Frameworks */,
+				DCB778D91C0A7002009BE3A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickSort;
+			productName = QuickSort;
+			productReference = DCB778DB1C0A7002009BE3A4 /* QuickSort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCB778F01C0A7002009BE3A4 /* QuickSortTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB779081C0A7002009BE3A4 /* Build configuration list for PBXNativeTarget "QuickSortTests" */;
+			buildPhases = (
+				DCB778ED1C0A7002009BE3A4 /* Sources */,
+				DCB778EE1C0A7002009BE3A4 /* Frameworks */,
+				DCB778EF1C0A7002009BE3A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB778F31C0A7002009BE3A4 /* PBXTargetDependency */,
+			);
+			name = QuickSortTests;
+			productName = QuickSortTests;
+			productReference = DCB778F11C0A7002009BE3A4 /* QuickSortTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCB778FB1C0A7002009BE3A4 /* QuickSortUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB7790B1C0A7002009BE3A4 /* Build configuration list for PBXNativeTarget "QuickSortUITests" */;
+			buildPhases = (
+				DCB778F81C0A7002009BE3A4 /* Sources */,
+				DCB778F91C0A7002009BE3A4 /* Frameworks */,
+				DCB778FA1C0A7002009BE3A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB778FE1C0A7002009BE3A4 /* PBXTargetDependency */,
+			);
+			name = QuickSortUITests;
+			productName = QuickSortUITests;
+			productReference = DCB778FC1C0A7002009BE3A4 /* QuickSortUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCB778D31C0A7002009BE3A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = FineSketch;
+				TargetAttributes = {
+					DCB778DA1C0A7002009BE3A4 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					DCB778F01C0A7002009BE3A4 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DCB778DA1C0A7002009BE3A4;
+					};
+					DCB778FB1C0A7002009BE3A4 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DCB778DA1C0A7002009BE3A4;
+					};
+				};
+			};
+			buildConfigurationList = DCB778D61C0A7002009BE3A4 /* Build configuration list for PBXProject "QuickSort" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCB778D21C0A7002009BE3A4;
+			productRefGroup = DCB778DC1C0A7002009BE3A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCB778DA1C0A7002009BE3A4 /* QuickSort */,
+				DCB778F01C0A7002009BE3A4 /* QuickSortTests */,
+				DCB778FB1C0A7002009BE3A4 /* QuickSortUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCB778D91C0A7002009BE3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB778E81C0A7002009BE3A4 /* Assets.xcassets in Resources */,
+				DCB778EB1C0A7002009BE3A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB778EF1C0A7002009BE3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB778FA1C0A7002009BE3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCB778D71C0A7002009BE3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB778E61C0A7002009BE3A4 /* ViewController.m in Sources */,
+				DCB778E31C0A7002009BE3A4 /* main.m in Sources */,
+				DCB778E01C0A7002009BE3A4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB778ED1C0A7002009BE3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB778F61C0A7002009BE3A4 /* QuickSortTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB778F81C0A7002009BE3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB779011C0A7002009BE3A4 /* QuickSortUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCB778F31C0A7002009BE3A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB778DA1C0A7002009BE3A4 /* QuickSort */;
+			targetProxy = DCB778F21C0A7002009BE3A4 /* PBXContainerItemProxy */;
+		};
+		DCB778FE1C0A7002009BE3A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB778DA1C0A7002009BE3A4 /* QuickSort */;
+			targetProxy = DCB778FD1C0A7002009BE3A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCB778E91C0A7002009BE3A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB778EA1C0A7002009BE3A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCB779031C0A7002009BE3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DCB779041C0A7002009BE3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DCB779061C0A7002009BE3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickSort/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finesketch.QuickSort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCB779071C0A7002009BE3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickSort/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finesketch.QuickSort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DCB779091C0A7002009BE3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickSortTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finesketch.QuickSortTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSort.app/Contents/MacOS/QuickSort";
+			};
+			name = Debug;
+		};
+		DCB7790A1C0A7002009BE3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickSortTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finesketch.QuickSortTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSort.app/Contents/MacOS/QuickSort";
+			};
+			name = Release;
+		};
+		DCB7790C1C0A7002009BE3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickSortUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finesketch.QuickSortUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QuickSort;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DCB7790D1C0A7002009BE3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickSortUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finesketch.QuickSortUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QuickSort;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCB778D61C0A7002009BE3A4 /* Build configuration list for PBXProject "QuickSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB779031C0A7002009BE3A4 /* Debug */,
+				DCB779041C0A7002009BE3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB779051C0A7002009BE3A4 /* Build configuration list for PBXNativeTarget "QuickSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB779061C0A7002009BE3A4 /* Debug */,
+				DCB779071C0A7002009BE3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCB779081C0A7002009BE3A4 /* Build configuration list for PBXNativeTarget "QuickSortTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB779091C0A7002009BE3A4 /* Debug */,
+				DCB7790A1C0A7002009BE3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCB7790B1C0A7002009BE3A4 /* Build configuration list for PBXNativeTarget "QuickSortUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB7790C1C0A7002009BE3A4 /* Debug */,
+				DCB7790D1C0A7002009BE3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCB778D31C0A7002009BE3A4 /* Project object */;
+}
