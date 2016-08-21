@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC7751071D6914190084B16D /* Chapter04.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7751061D6914190084B16D /* Chapter04.m */; };
 		DCAA34C91D690FE80081FE88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA34C81D690FE80081FE88 /* main.m */; };
 		DCAA34CC1D690FE80081FE88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA34CB1D690FE80081FE88 /* AppDelegate.m */; };
 		DCAA34CF1D690FE80081FE88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA34CE1D690FE80081FE88 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC7751051D6914190084B16D /* Chapter04.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter04.h; sourceTree = "<group>"; };
+		DC7751061D6914190084B16D /* Chapter04.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter04.m; sourceTree = "<group>"; };
 		DCAA34C41D690FE80081FE88 /* BigNerdRanchGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigNerdRanchGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAA34C81D690FE80081FE88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCAA34CA1D690FE80081FE88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,9 +63,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC7751011D6913150084B16D /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				DC7751051D6914190084B16D /* Chapter04.h */,
+				DC7751061D6914190084B16D /* Chapter04.m */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
 		DCAA34BB1D690FE80081FE88 = {
 			isa = PBXGroup;
 			children = (
+				DC7751011D6913150084B16D /* Examples */,
 				DCAA34C61D690FE80081FE88 /* BigNerdRanchGuide */,
 				DCAA34E01D690FE80081FE88 /* BigNerdRanchGuideUITests */,
 				DCAA34C51D690FE80081FE88 /* Products */,
@@ -160,6 +173,7 @@
 				TargetAttributes = {
 					DCAA34C31D690FE80081FE88 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = V8SDY9W7EH;
 					};
 					DCAA34DC1D690FE80081FE88 = {
 						CreatedOnToolsVersion = 7.3;
@@ -214,6 +228,7 @@
 				DCAA34CF1D690FE80081FE88 /* ViewController.m in Sources */,
 				DCAA34CC1D690FE80081FE88 /* AppDelegate.m in Sources */,
 				DCAA34C91D690FE80081FE88 /* main.m in Sources */,
+				DC7751071D6914190084B16D /* Chapter04.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BigNerdRanchGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hawaiianairlines.BigNerdRanchGuide;
@@ -352,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BigNerdRanchGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hawaiianairlines.BigNerdRanchGuide;
@@ -400,6 +417,7 @@
 				DCAA34E81D690FE80081FE88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCAA34E91D690FE80081FE88 /* Build configuration list for PBXNativeTarget "BigNerdRanchGuideUITests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +426,7 @@
 				DCAA34EB1D690FE80081FE88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
