@@ -10,6 +10,7 @@
 #import <unistd.h> // additional default standard library (for sleep(s))
 #import <stdlib.h>
 #import <math.h> // maths, sin
+#import <readline/readline.h> // readline, part of atoi library
 #import <Foundation/Foundation.h>
 
 // Global variables or static
@@ -129,10 +130,125 @@ void workWithNumbers()
     printf("sin(c) is %f\n", c);
 }
 
+void loop()
+{
+    printf("\n");
+    printf("Loop\n");
+    printf("**************************\n");
+    
+    int i = 0;
+    while (i < 5)
+    {
+        printf("%d. Aaron is Cool\n", i);
+        i++;
+    }
+    
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d. Aaron is Cool.\n", i);
+    }
+    
+    for (i = 0; i < 12; i++)
+    {
+        printf("Checking i = %d\n", i);
+        if (i + 90 == i * i)
+        {
+            break;
+        }
+    }
+    printf("The answer is %d.\n", i);
+    
+    for (i = 0; i < 12; i++) {
+        if (i % 3 == 0) {
+            continue;
+        }
+        printf("2nd Checking i = %d\n", i);
+        if (i + 90 == i * i) {
+            break;
+        }
+    }
+    printf("The answer is %d.\n", i);
+    
+    do {
+        printf("%d. (do - while) Aaron is Cool\n", i);
+        i++;
+    } while (i < 12);
+    
+    // add atoi library!!!
+    printf("Who is cool?\n");
+    // uncomment below 2 lines!
+    //const char *name = readline(NULL);
+    //printf("%s is the coolest!\n\n", name);
+    
+    int num = atoi("a");
+    printf("atoi number is %d\n", num);
+}
+
+void addressPointer()
+{
+    printf("\n");
+    printf("Address Pointer\n");
+    printf("**************************\n");
+    
+    int i = 17;
+    printf("i stores its value at %p\n", &i);
+    printf("this addressPointer function starts at %p\n", addressPointer);
+    
+    int *addressOfi = &i;
+    int *addressOfaddressPointer = &addressPointer;
+    printf("addressOfi value is %d\n", addressOfi);
+    printf("addressOfaddressPointer value is %d\n", addressOfaddressPointer);
+    printf("i atores its value at %p\n", addressOfi);
+    
+    // size of the memory address and datatype
+    printf("An int is %zu bytes\n", sizeof(int));
+    printf("A pointer is %zu bytes\n", sizeof(int *));
+    printf("An int is %zu bytes\n", sizeof(i));
+    printf("A pointer is %zu bytes\n", sizeof(addressOfi));
+    
+    // NULL
+    float *myPointer;
+    if (myPointer) {
+        printf("not NULL\n");
+    }
+    else {
+        printf("NULL\n");
+    }
+    
+    float actualGravity;
+    float *measureGravityPtr = NULL;
+    if (measureGravityPtr) {
+        actualGravity = *measureGravityPtr;
+    }
+    else {
+        //actualGravity = estimatedGravity(planetRadius);
+    }
+}
+
+void passByReference()
+{
+    printf("\n");
+    printf("Pass by Reference\n");
+    printf("**************************\n");
+    
+    double pi = 3.1444444;
+    double integerPart;
+    double fractionPart;
+    
+    // Pass the address of integerPart as an argument
+    fractionPart = modf(pi, &integerPart);
+    
+    // Find the value stored in integerPart
+    printf("integerPart = %.0f, fractionPart = %.2f\n", integerPart, fractionPart);
+}
+
+
 // ---------------------------------------------
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
+        printf("this 'main' function starts at %p\n", main);
         
         //printf("Kate has done as much Cocoa Programming as I could fit into days.\n");
         //printf("Bo has done as much Objective-C Programming as I could fit into 2 days.\n");
@@ -162,6 +278,12 @@ int main(int argc, const char * argv[]) {
         stringFunction();
         
         workWithNumbers();
+        
+        loop();
+        
+        addressPointer();
+        
+        passByReference();
         
         return EXIT_SUCCESS;
     }
