@@ -242,6 +242,97 @@ void passByReference()
     printf("integerPart = %.0f, fractionPart = %.2f\n", integerPart, fractionPart);
 }
 
+// Here is the declaration of the struct
+struct Person {
+    float heightInMeters;
+    int weightInKilos;
+};
+
+float bodyMassIndex(struct Person p)
+{
+    return p.weightInKilos / (p.heightInMeters * p.weightInKilos);
+}
+
+void structs()
+{
+    printf("\n");
+    printf("Structs\n");
+    printf("**************************\n");
+    
+    struct Person mikey;
+    mikey.heightInMeters = 1.7;
+    mikey.weightInKilos = 96;
+    
+    struct Person aaron;
+    aaron.heightInMeters = 1.97;
+    aaron.weightInKilos = 84;
+    
+    printf("mikey is %.2f meters tall\n", mikey.heightInMeters);
+    printf("mikey weighs %d kilograms\n", mikey.weightInKilos);
+    printf("aaron is %.2f meters tall\n", aaron.heightInMeters);
+    printf("aaron weighs %d kilograms\n", aaron.weightInKilos);
+    
+    float bmi;
+    bmi = bodyMassIndex(mikey);
+    printf("mikey has a BMI of %.2f\n", bmi);
+    
+    bmi = bodyMassIndex(aaron);
+    printf("aaron has a BMI of %.2f\n", bmi);
+    
+}
+
+typedef struct {
+    float heightInMeters;
+    int weightInKilos;
+} Person1;
+
+float bodyMassIndex1(Person1 *person)
+{
+    return person->weightInKilos / (person->heightInMeters * person->heightInMeters);
+}
+
+void theHeap()
+{
+    printf("\n");
+    printf("Heap\n");
+    printf("**************************\n");
+    
+    // declare a pointer
+    float *startOfBuffer;
+    
+    // Ask to use some bytes from the heap
+    startOfBuffer = malloc(1000 * sizeof(float));
+    
+    // ... use the buffer here ...
+    
+    // relinquish your clain on the memory so it can be reused
+    free(startOfBuffer);
+    
+    // Forget where the memory is
+    startOfBuffer = NULL;
+    
+    // ************************************
+    
+    // Allocate memory for one Person struct
+    Person1 *mikey = (Person1 *)malloc(sizeof(Person1));
+    
+    // Fill in two members of the struct
+    mikey->weightInKilos = 96;
+    mikey->heightInMeters = 1.7;
+    
+    // Print out the BMI of the original Person1
+    float mikeyBMI = bodyMassIndex1(mikey);
+    printf("mikey has a BMI of %f\n", mikeyBMI);
+    
+    // Let the memory be recyced
+    free(mikey);
+    
+    // Forget where it was
+    mikey = NULL;
+    
+}
+
+
 
 // ---------------------------------------------
 
@@ -284,6 +375,10 @@ int main(int argc, const char * argv[]) {
         addressPointer();
         
         passByReference();
+        
+        structs();
+        
+        theHeap();
         
         return EXIT_SUCCESS;
     }
